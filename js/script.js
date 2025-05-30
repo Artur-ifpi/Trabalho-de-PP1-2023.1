@@ -4,43 +4,35 @@ let acessibilidade = ["Figura encapuzada acessando um celular","jogador do flame
 let indice = 0;
 
 function mostrarImagem() {
-    document.getElementById("imagem").src = imagens[indice];
-    document.getElementById("descricao").textContent = descricoes[indice]; 
-    document.getElementById("imagem").alt = acessibilidade[indice]; 
-
     const imagem = document.getElementById("imagem");
+    const descricao = document.getElementById("descricao");
 
-   
-    
-    
+    // Aplica fade-out
+    imagem.classList.add("fade-out");
 
-    
+    // Aguarda a transição terminar para trocar a imagem e aplicar fade-in
+    setTimeout(() => {
+        imagem.src = imagens[indice];
+        imagem.alt = acessibilidade[indice];
+        descricao.textContent = descricoes[indice];
+
+        imagem.classList.remove("fade-out");
+    }, 500); // Tempo igual ao da transição
 }
 
 document.getElementById("proxima").onclick = () => {
     indice = (indice + 1) % imagens.length;
-    mostrarImagem(); 
-    const imagem = document.getElementById("imagem");
-    imagem.classList.add("fade-out");
-
-   
-    setTimeout(() => {
-
-        imagem.classList.remove("fade-out");
-    }, 500); 
+    mostrarImagem();
 };
 
 document.getElementById("anterior").onclick = () => {
     indice = (indice - 1 + imagens.length) % imagens.length;
-    mostrarImagem(); 
-    const imagem = document.getElementById("imagem");
-    imagem.classList.add("fade-out");
-
-   
-    setTimeout(() => {
-
-        imagem.classList.remove("fade-out");
-    }, 500); 
+    mostrarImagem();
 };
 
-mostrarImagem();
+// Ao carregar a página
+window.onload = () => {
+    mostrarImagem();
+};
+
+
