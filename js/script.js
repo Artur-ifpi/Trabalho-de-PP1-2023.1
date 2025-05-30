@@ -11,10 +11,10 @@ function mostrarImagem() {
     const imagem = document.getElementById("imagem");
     imagem.classList.remove("fade");
     void imagem.offsetWidth; 
-    imagem.classList.add("fade");
-
     imagem.src = imagens[indice];
     imagem.alt = acessibilidade[indice];
+    imagem.classList.add("fade");
+
     document.getElementById("descricao").textContent = descricoes[indice];
 }
 
