@@ -9,6 +9,18 @@ function mostrarImagem() {
     document.getElementById("imagem").alt = acessibilidade[indice]; 
 
     const imagem = document.getElementById("imagem");
+
+   
+    
+    
+
+    
+}
+
+document.getElementById("proxima").onclick = () => {
+    indice = (indice + 1) % imagens.length;
+    mostrarImagem(); 
+    const imagem = document.getElementById("imagem");
     imagem.classList.add("fade-out");
 
    
@@ -16,20 +28,19 @@ function mostrarImagem() {
 
         imagem.classList.remove("fade-out");
     }, 500); 
-   
-    
-
-    document.getElementById("descricao").textContent = descricoes[indice];
-}
-
-document.getElementById("proxima").onclick = () => {
-    indice = (indice + 1) % imagens.length;
-    mostrarImagem();
 };
 
 document.getElementById("anterior").onclick = () => {
     indice = (indice - 1 + imagens.length) % imagens.length;
-    mostrarImagem();
+    mostrarImagem(); 
+    const imagem = document.getElementById("imagem");
+    imagem.classList.add("fade-out");
+
+   
+    setTimeout(() => {
+
+        imagem.classList.remove("fade-out");
+    }, 500); 
 };
 
 mostrarImagem();
