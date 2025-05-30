@@ -6,7 +6,16 @@ let indice = 0;
 function mostrarImagem() {
     document.getElementById("imagem").src = imagens[indice];
     document.getElementById("descricao").textContent = descricoes[indice]; 
-    document.getElementById("imagem").alt = acessibilidade[indice];
+    document.getElementById("imagem").alt = acessibilidade[indice]; 
+
+    const imagem = document.getElementById("imagem");
+    imagem.classList.remove("fade");
+    void imagem.offsetWidth; 
+    imagem.classList.add("fade");
+
+    imagem.src = imagens[indice];
+    imagem.alt = acessibilidade[indice];
+    document.getElementById("descricao").textContent = descricoes[indice];
 }
 
 document.getElementById("proxima").onclick = () => {
