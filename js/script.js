@@ -13,9 +13,6 @@ function mostrarImagem() {
 
    
     setTimeout(() => {
-        imagem.src = imagens[indice];
-        imagem.alt = acessibilidade[indice];
-        descricao.textContent = descricoes[indice];
 
         imagem.classList.remove("fade-out");
     }, 500); 
