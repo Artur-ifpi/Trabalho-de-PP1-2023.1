@@ -1,3 +1,13 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,7 +25,7 @@ header {
 nav a {
     margin: 0 10px;
     color: white;
-    text-decoration: none
+    text-decoration: none;
 }
 
 section {
@@ -26,19 +36,19 @@ section {
 }
 
 img {
-    width: 600px; 
+    width: 600px;
     height: 400px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
     display: block;
     margin: 10px auto;
+    
 }
 
 button {
     font-size: 20px;
     margin: 5px;
-    padding: 8px; 
+    padding: 8px;
     border-width: 5px;
-    
 }
 
 footer {
@@ -46,23 +56,21 @@ footer {
     padding: 10px;
     background-color: #222;
     color: white;
-} 
- 
-
-#secao4 { 
-    background-color: aqua;
-}  
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
+
+#secao4 {
+    background-color: aqua;
+}
+
 #imagem {
     background-color: #222;
     padding: 8px;
-    border-width: 8px; 
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    border-width: 8px;
+    opacity: 1; 
+}
+
+.fade-out {
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 button:hover {
@@ -76,10 +84,4 @@ button:hover {
     background-color: #e9e9ff;
     border-radius: 5px;
     padding: 20px;
-} 
-
-
-
-.fade-out {
-    opacity: 0;
 }

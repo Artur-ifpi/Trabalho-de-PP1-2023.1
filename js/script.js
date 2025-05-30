@@ -8,7 +8,7 @@ function mostrarImagem() {
     const descricao = document.getElementById("descricao");
 
     // Aplica fade-out
-    imagem.classList.add("fade-out");
+    imagem.classList.remove("fade-out");
 
     // Aguarda a transição terminar para trocar a imagem e aplicar fade-in
     setTimeout(() => {
@@ -16,13 +16,13 @@ function mostrarImagem() {
         imagem.alt = acessibilidade[indice];
         descricao.textContent = descricoes[indice];
 
-        imagem.classList.remove("fade-out");
+        imagem.classList.add("fade-out");
     }, 500); // Tempo igual ao da transição
 }
 
 document.getElementById("proxima").onclick = () => {
     indice = (indice + 1) % imagens.length;
-    mostrarImagem();
+    mostrarImagem(); 
 };
 
 document.getElementById("anterior").onclick = () => {
