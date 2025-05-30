@@ -9,11 +9,19 @@ function mostrarImagem() {
     document.getElementById("imagem").alt = acessibilidade[indice]; 
 
     const imagem = document.getElementById("imagem");
-    imagem.classList.remove("fade");
-    void imagem.offsetWidth; 
+    imagem.classList.add("fade-out");
+
+   
+    setTimeout(() => {
+        imagem.src = imagens[indice];
+        imagem.alt = acessibilidade[indice];
+        descricao.textContent = descricoes[indice];
+
+        imagem.classList.remove("fade-out");
+    }, 500); 
     imagem.src = imagens[indice];
     imagem.alt = acessibilidade[indice];
-    imagem.classList.add("fade");
+    
 
     document.getElementById("descricao").textContent = descricoes[indice];
 }

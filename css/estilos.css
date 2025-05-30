@@ -57,14 +57,13 @@ footer {
     from { opacity: 0; }
     to { opacity: 1; }
 }
-#imagem { 
+#imagem {
     background-color: #222;
     padding: 8px;
     border-width: 8px; 
-    animation: fadeIn 0.5s ease-in;
     opacity: 1;
-    transition: opacity 0.5s ease-in;
-} 
+    transition: opacity 0.5s ease-in-out;
+}
 
 button:hover {
     background-color: #0615e6;
@@ -81,8 +80,6 @@ button:hover {
 
 
 
-.fade { 
-    opacity: 1;
-    animation: fadeIn 0.5s ease-in;
+.fade-out {
+    opacity: 0;
 }
-
