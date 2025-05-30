@@ -19,8 +19,7 @@ function mostrarImagem() {
 
         imagem.classList.remove("fade-out");
     }, 500); 
-    imagem.src = imagens[indice];
-    imagem.alt = acessibilidade[indice];
+   
     
 
     document.getElementById("descricao").textContent = descricoes[indice];
