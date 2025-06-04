@@ -33,6 +33,8 @@ document.getElementById("anterior").onclick = () => {
 // Ao carregar a página
 window.onload = () => {
     mostrarImagem();
-};
+}; 
+ 
+
 
 

@@ -84,4 +84,24 @@ button:hover {
     background-color: #e9e9ff;
     border-radius: 5px;
     padding: 20px;
+} 
+#topo { 
+   background-color:yellow;
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    
+} 
+
+#principal{ 
+    display:flex;
+    flex-direction: row; 
+    
 }
+#lateral { 
+    width: 33%;
+} 
+#google{
+    font-size: 10px;
+ }
