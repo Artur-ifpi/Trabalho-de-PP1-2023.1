@@ -20,6 +20,8 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 nav a {
@@ -31,7 +33,7 @@ nav a {
 section {
     padding: 20px;
     background-color: white;
-    margin: 10px;
+    margin: 40px;
     border-radius: 5px;
 }
 
@@ -56,6 +58,7 @@ footer {
     padding: 10px;
     background-color: #222;
     color: white;
+    border: 10px solid #a50606;
 }
 
 #secao4 {
@@ -104,4 +107,11 @@ button:hover {
 } 
 #google{
     font-size: 10px;
- }
+}
+
+
+#imagem5{
+    width: 300px;
+    height: auto;
+    margin: 0;
+}
