@@ -20,6 +20,8 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 nav a {
@@ -109,3 +111,10 @@ button:hover {
  main{ 
     margin:20px;
  }
+
+
+#imagem5{
+    width: 300px;
+    height: auto;
+    margin: 0;
+}
