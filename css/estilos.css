@@ -31,7 +31,7 @@ nav a {
 section {
     padding: 20px;
     background-color: white;
-    margin: 10px;
+    margin: 20px 0;
     border-radius: 5px;
 }
 
@@ -55,7 +55,8 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #222;
-    color: white;
+    color: white; 
+    border-top: 4px solid #ffcc00;
 }
 
 #secao4 {
@@ -104,4 +105,7 @@ button:hover {
 } 
 #google{
     font-size: 10px;
+ } 
+ main{ 
+    margin:20px;
  }

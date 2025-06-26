@@ -35,6 +35,13 @@ window.onload = () => {
     mostrarImagem();
 }; 
  
+function atualizarHora() {
+    const agora = new Date();
+    const horaFormatada = agora.toLocaleTimeString();
+    document.getElementById("hora").textContent = "Hora atual: " + horaFormatada;
+}
+setInterval(atualizarHora, 1000);
+atualizarHora(); // Atualiza imediatamente ao carregar
 
 
 
