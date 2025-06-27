@@ -43,5 +43,17 @@ function atualizarHora() {
 setInterval(atualizarHora, 1000);
 atualizarHora(); // Atualiza imediatamente ao carregar
 
+document.getElementById("tema escuro").onclick = () => { 
+
+ let body =   document.getElementById("body") 
+ if( body.style.backgroundColor == "rgb(12, 1, 1)" ){ 
+    body.style.backgroundColor =  "rgb(248, 243, 243)" 
+ } else {
+    body.style.backgroundColor = "rgb(12, 1, 1)"
+ }
+alert("Cor alterada")
+ 
+
+}
 
 
